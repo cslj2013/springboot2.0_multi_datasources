@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.springboot2.0</groupId>
+  <artifactId>springboot2.0_multi_datasources</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- spring-boot-starter-parent 整合第三方常用框架依赖信息(包含各种依赖信息) -->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>2.0.0.RELEASE</version>
+  </parent>
+  
+  <!-- spring-boot-starter-web springboot整合springmvc web 
+  	实现原理：maven依赖继承关系，相当于把第三方常用maven依赖信息，在parent项目中已封装
+  -->
+  <dependencies>
+  	<!-- 根据需要选择parent中封装的第三方框架 -->
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  		<!-- 不需要写版本号，因为在parent中已封装好版本号 -->
+  	</dependency>
+  	<!-- mybatis-spring-boot-starter -->
+		<dependency>
+		    <groupId>org.mybatis.spring.boot</groupId>
+		    <artifactId>mybatis-spring-boot-starter</artifactId>
+		    <version>2.0.1</version>
+		</dependency>
+		<!-- mysql 驱动 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+		<!-- 提示建议引入 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+  </dependencies>
+</project>

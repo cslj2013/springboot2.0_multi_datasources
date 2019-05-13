@@ -1,0 +1,18 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.springboot2.datasourceconfig.DatasourceConfig1",
+      "name": "spring.datasource.test1",
+      "sourceMethod": "public javax.sql.DataSource test1DataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.springboot2.datasourceconfig.DatasourceConfig2",
+      "name": "spring.datasource.test2",
+      "sourceMethod": "public javax.sql.DataSource test2DataSource() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}

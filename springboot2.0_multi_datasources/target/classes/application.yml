@@ -1,0 +1,13 @@
+#多数据源配置
+spring:
+  datasource:
+    test1: #数据源1(自定义)
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/mytest?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8&allowMultiQueries=true
+      username: root
+      password: (Junli@2018*test)
+    test2: #数据源2(自定义)
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/mytest2?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8&allowMultiQueries=true
+      username: root
+      password: (Junli@2018*test)
