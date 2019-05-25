@@ -19,7 +19,7 @@ public class MultiDataSourceController {
 	UserService userService;
 	
 	@RequestMapping("/insertEmployee")
-	public String insert(String lastName){
+	public String insert(String lastName) throws Exception{
 		Employee emp=new Employee();
 		emp.setLastName(lastName);
 		int i=employeeService1.insert(emp);
