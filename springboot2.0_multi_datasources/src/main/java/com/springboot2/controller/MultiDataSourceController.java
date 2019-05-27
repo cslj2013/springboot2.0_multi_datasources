@@ -44,4 +44,10 @@ public class MultiDataSourceController {
 		int i=userService.insert(user2);
 		return i+"";
 	}
+	
+	@RequestMapping("/insertEmployeeAndUser")
+	public String insertEmployeeAndUser(@RequestParam("name") String name,@RequestParam("age") Integer age) throws Exception{
+		int i=employeeService1.insertEmployeeAndUser(name,age);
+		return i+"";
+	}
 }
